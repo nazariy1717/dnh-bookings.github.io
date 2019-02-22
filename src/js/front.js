@@ -20,7 +20,7 @@ let front = {
 
     getCompaniesJSON: function () {
         let self = front;
-        $.getJSON("/dist/js/items.json", function(result){
+        $.getJSON("dist/js/items.json", function(result){
             console.log(result);
             self.items = result;
             self.loadMarkers(self.items);
