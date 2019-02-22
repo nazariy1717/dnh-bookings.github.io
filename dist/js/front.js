@@ -1,6 +1,7 @@
 
 function initMap() {
     front.mapObject = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 39.750548, lng: -101.578319},
         zoom: 4,
     });
 }
@@ -10,6 +11,7 @@ let front = {
     state: 0,
     items: [],
     markers: [],
+    loaded: 0,
 
     hamburger: $('.hamburger'),
     nav: $('.header-list'),
@@ -33,7 +35,9 @@ let front = {
         let self = front;
         switch(self.state) {
             case 0: {
-                self.mapObject.setCenter(new google.maps.LatLng(39.750548, -101.578319));
+                if(self.loaded){
+                    self.mapObject.setCenter(new google.maps.LatLng(39.750548, -101.578319));
+                }
                 $('.js-map-listing').html('');
                 self.removeMarkers(self.markers);
                 $.each(itemsArray.usa, function (key, val) {
@@ -46,6 +50,7 @@ let front = {
                     let template = self.template(key, val);
                     $('.js-map-listing').append(template);
                 });
+                self.loaded = 1;
                 break;
             }
             case 1: {
