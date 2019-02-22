@@ -1,11 +1,4 @@
 
-function initMap() {
-    front.mapObject = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 39.750548, lng: -101.578319},
-        zoom: 4,
-    });
-}
-
 let front = {
 
     state: 0,

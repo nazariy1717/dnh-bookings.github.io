@@ -61,6 +61,14 @@
 
 <script src="dist/js/libs/jquery-3.2.1.min.js"></script>
 <script src="dist/js/front.js"></script>
+<script>
+    function initMap() {
+        front.mapObject = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 39.750548, lng: -101.578319},
+            zoom: 4,
+        });
+    }
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdTRV4esLYdV9hMCwO3SbrObmNKPYOt9g&callback=initMap" async defer></script>
 
 
