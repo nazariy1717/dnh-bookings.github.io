@@ -1,0 +1,91 @@
+{
+  "usa": [
+    {
+      "address_lat": 46.516449,
+      "address_lng": -98.503337,
+      "name": "62nd St SE"
+    },
+    {
+      "address_lat": 38.919475,
+      "address_lng": -116.117827,
+      "name": "Nye County "
+    },
+    {
+      "address_lat": 48.046527,
+      "address_lng": -107.244390,
+      "name": "Hinsdale Elementary"
+    },
+    {
+      "address_lat": 33.748179,
+      "address_lng": -117.692583,
+      "name": "Limestone Cyn Rd"
+    },
+    {
+      "address_lat": 39.311433,
+      "address_lng": -74.938801,
+      "name": " Sand Company Rd"
+    },
+    {
+      "address_lat": 33.548096,
+      "address_lng": -79.818475,
+      "name": " Sand Company Rd"
+    },
+    {
+      "address_lat": 33.781568,
+      "address_lng": -84.429941,
+      "name": "Atlanta, GA"
+    },
+    {
+      "address_lat": 34.883523,
+      "address_lng": -91.232455,
+      "name": " Eden Rd"
+    },
+    {
+      "address_lat": 43.471512,
+      "address_lng": -112.107179,
+      "name": "Idaho Falls"
+    },
+    {
+      "address_lat": 39.997245,
+      "address_lng": -118.204858,
+      "name": "School District 91"
+    },
+    {
+      "address_lat": 46.239853,
+      "address_lng": -121.859914,
+      "name": "Stevenson-carson"
+    },
+    {
+      "address_lat": 36.596475,
+      "address_lng": -101.259920,
+      "name": "Hardesty"
+    }
+  ],
+  "canada": [
+    {
+      "address_lat": 56.240243,
+      "address_lng": -119.962231,
+      "name": "Clear Hills No."
+    },
+    {
+      "address_lat": 52.149963,
+      "address_lng": -93.819171,
+      "name": "Kenora, Unorganized"
+    },
+    {
+      "address_lat": 51.308487,
+      "address_lng": -120.756583,
+      "name": "Thompson-Nicola E"
+    },
+    {
+      "address_lat": 50.900255,
+      "address_lng": -106.483706,
+      "name": "Maple Bush No"
+    },
+    {
+      "address_lat": 50.093493,
+      "address_lng": -90.247081,
+      "name": "Unorganized Thunder"
+    }
+  ]
+}

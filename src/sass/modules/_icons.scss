@@ -1,0 +1,19 @@
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon', sans-serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-question-circle:before {
+  content: "\e900";
+}
+.icon-envelope:before {
+  content: "\e901";
+}
