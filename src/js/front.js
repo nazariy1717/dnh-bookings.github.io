@@ -40,7 +40,8 @@ let front = {
                 $.each(itemsArray.usa, function (key, val) {
                     let marker = new google.maps.Marker({
                         position: new google.maps.LatLng(parseFloat(val['address_lat']), parseFloat(val['address_lng'])),
-                        map: self.mapObject
+                        map: self.mapObject,
+                        icon: 'dist/img/marker.png'
                     });
                     self.markers.push(marker);
                     let template = self.template(key, val);
@@ -55,7 +56,8 @@ let front = {
                 $.each(itemsArray.canada, function (key, val) {
                     let marker = new google.maps.Marker({
                         position: new google.maps.LatLng(parseFloat(val['address_lat']), parseFloat(val['address_lng'])),
-                        map: self.mapObject
+                        map: self.mapObject,
+                        icon: 'dist/img/marker.png'
                     });
                     self.markers.push(marker);
                     let template = self.template(key, val);
