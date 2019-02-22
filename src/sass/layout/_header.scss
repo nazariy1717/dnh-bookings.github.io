@@ -6,10 +6,12 @@
   right: 0;
   top: 0;
   z-index: 99;
-  height: 70px;
   background-color: var(--grey);
   &__row{
     height: 70px;
+    @media (max-width: $breakpoint-sm){
+      height: 50px;
+    }
   }
   &__logo{
     color: #fff;
@@ -17,6 +19,9 @@
     font-size: 24px;
     text-decoration: none;
     transition: all 0.3s;
+    @media (max-width: $breakpoint-sm){
+      font-size: 16px;
+    }
     &:hover{
       color: var(--black);
       text-decoration: none;
@@ -28,10 +33,18 @@
   text-align: right;
   margin: 0;
   padding: 0;
+  @media (max-width: $breakpoint-sm){
+    display: none;
+    text-align: left;
+    padding-right: 60px;
+  }
   &__item{
     display: inline-block;
     & + & {
       margin-left: 30px;
+      @media (max-width: $breakpoint-sm){
+        margin-left: 20px;
+      }
     }
   }
   &__link{
@@ -40,6 +53,9 @@
     font-size: 30px;
     text-decoration: none;
     transition: all 0.3s;
+    @media (max-width: $breakpoint-sm){
+      font-size: 20px;
+    }
     &:hover{
       color: var(--black);
       text-decoration: none;
@@ -57,7 +73,7 @@
   .hamburger {
     display: block;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     overflow: visible;
     margin: 0;

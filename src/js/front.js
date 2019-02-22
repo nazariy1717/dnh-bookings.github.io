@@ -7,9 +7,13 @@ function initMap() {
 }
 
 let front = {
+
     state: 0,
     items: [],
     markers: [],
+
+    hamburger: $('.hamburger'),
+    nav: $('.header-list'),
 
     init: function () {
         let self = front;
@@ -21,7 +25,6 @@ let front = {
     getCompaniesJSON: function () {
         let self = front;
         $.getJSON("dist/js/items.json", function(result){
-            console.log(result);
             self.items = result;
             self.loadMarkers(self.items);
         });
@@ -31,7 +34,6 @@ let front = {
         let self = front;
         switch(self.state) {
             case 0: {
-                console.log('usa');
                 self.mapObject.setCenter(new google.maps.LatLng(39.750548, -101.578319));
                 $('.js-map-listing').html('');
                 self.removeMarkers(self.markers);
@@ -75,7 +77,7 @@ let front = {
 
     template: function(key, array){
         return `
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-4 map-listing__column">
                     <div class="item" data-index="${key}">
                         <div class="item__head">
                             <span class="item__title">${array.name}</span>
@@ -88,8 +90,23 @@ let front = {
             `;
     },
 
+    toggleNav: function(){
+        if (!this.hamburger.hasClass('is-active')) {
+            this.hamburger.addClass("is-active");
+            this.nav.toggleClass('js-show');
+        }
+        else {
+            this.hamburger.removeClass("is-active");
+            this.nav.toggleClass('js-show');
+        }
+    },
+
     events: function () {
         let self = front;
+
+        $(document).on('click', '.hamburger', function () {
+            self.toggleNav();
+        });
 
         $(document).on('click', '.js-map-control', function(){
             if(!$(this).hasClass('active')){

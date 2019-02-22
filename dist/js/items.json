@@ -13,22 +13,22 @@
     {
       "address_lat": 48.046527,
       "address_lng": -107.244390,
-      "name": "Hinsdale Elementary"
+      "name": "Hinsdale "
     },
     {
       "address_lat": 33.748179,
       "address_lng": -117.692583,
-      "name": "Limestone Cyn Rd"
+      "name": "Limestone"
     },
     {
       "address_lat": 39.311433,
       "address_lng": -74.938801,
-      "name": " Sand Company Rd"
+      "name": " Sand  Rd"
     },
     {
       "address_lat": 33.548096,
       "address_lng": -79.818475,
-      "name": " Sand Company Rd"
+      "name": " Sand  Rd"
     },
     {
       "address_lat": 33.781568,
@@ -48,12 +48,12 @@
     {
       "address_lat": 39.997245,
       "address_lng": -118.204858,
-      "name": "School District 91"
+      "name": "School  91"
     },
     {
       "address_lat": 46.239853,
       "address_lng": -121.859914,
-      "name": "Stevenson-carson"
+      "name": "Stevenson"
     },
     {
       "address_lat": 36.596475,
@@ -65,27 +65,27 @@
     {
       "address_lat": 56.240243,
       "address_lng": -119.962231,
-      "name": "Clear Hills No."
+      "name": "Clear Hills "
     },
     {
       "address_lat": 52.149963,
       "address_lng": -93.819171,
-      "name": "Kenora, Unorganized"
+      "name": "Kenora"
     },
     {
       "address_lat": 51.308487,
       "address_lng": -120.756583,
-      "name": "Thompson-Nicola E"
+      "name": "Thompson"
     },
     {
       "address_lat": 50.900255,
       "address_lng": -106.483706,
-      "name": "Maple Bush No"
+      "name": "Maple Bush"
     },
     {
       "address_lat": 50.093493,
       "address_lng": -90.247081,
-      "name": "Unorganized Thunder"
+      "name": "Unorganized"
     }
   ]
 }
