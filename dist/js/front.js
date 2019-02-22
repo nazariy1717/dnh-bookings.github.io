@@ -130,6 +130,7 @@ let front = {
     },
 };
 
-$(function () {
+$(document).ready(function(){
     front.init();
 });
+
