@@ -47,7 +47,6 @@ let front = {
                 break;
             }
             case 1: {
-                console.log('canada');
                 self.mapObject.setCenter(new google.maps.LatLng( 57.455882, -102.289566));
                 $('.js-map-listing').html('');
                 self.removeMarkers(self.markers);
