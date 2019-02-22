@@ -5,12 +5,14 @@ let front = {
     items: [],
     markers: [],
     loaded: 0,
+    mapObject: null,
 
     hamburger: $('.hamburger'),
     nav: $('.header-list'),
 
-    init: function () {
+    init: function (map) {
         let self = front;
+        self.mapObject = map;
         this.getCompaniesJSON();
         this.events();
     },
@@ -125,6 +127,5 @@ let front = {
 
 
 $(document).ready(function(){
-    front.init();
 });
 
