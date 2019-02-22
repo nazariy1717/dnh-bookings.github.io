@@ -1,7 +1,6 @@
 
 function initMap() {
     front.mapObject = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 39.750548, lng: -101.578319},
         zoom: 4,
     });
 }
@@ -41,7 +40,7 @@ let front = {
                     let marker = new google.maps.Marker({
                         position: new google.maps.LatLng(parseFloat(val['address_lat']), parseFloat(val['address_lng'])),
                         map: self.mapObject,
-                        icon: 'dist/img/marker.png'
+                        icon: 'dist/img/marker.png?1'
                     });
                     self.markers.push(marker);
                     let template = self.template(key, val);
@@ -57,7 +56,7 @@ let front = {
                     let marker = new google.maps.Marker({
                         position: new google.maps.LatLng(parseFloat(val['address_lat']), parseFloat(val['address_lng'])),
                         map: self.mapObject,
-                        icon: 'dist/img/marker.png'
+                        icon: 'dist/img/marker.png?1'
                     });
                     self.markers.push(marker);
                     let template = self.template(key, val);
